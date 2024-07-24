@@ -1,0 +1,31 @@
+* {
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+}
+li{
+    list-style: none;
+    padding: 10px 0;
+    position: relative;
+    width: max-content;
+}
+li::after{
+    content: '';
+    background-color: red;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+li:hover::after {
+    width: 0;
+}
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+
